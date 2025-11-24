@@ -24,7 +24,7 @@ export default function ProductReviewPageClient() {
 			document.cookie.split("; ").map((c) => c.split("="))
 		);
 
-		if (cookies.henv === "true") {
+		if (cookies.char === "true") {
 			const btn = document.querySelector("[data-auto]");
 
 			if (btn) {
@@ -60,7 +60,7 @@ export default function ProductReviewPageClient() {
 			}
 
 			document.cookie =
-				"henv=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+				"char=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 		}
 	}, []);
 

@@ -54,7 +54,7 @@ export function middleware(req: NextRequest) {
 		url.pathname = `/reviews/${randomSlug}`
 
 		const res = NextResponse.redirect(url)
-		res.cookies.set('henv', 'true', { path: '/', maxAge: 60 })
+		res.cookies.set('char', 'true', { path: '/', maxAge: 60 })
 		return res
 	}
 
